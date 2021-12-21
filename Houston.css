@@ -1,0 +1,92 @@
+@keyframes header_anim {
+    from {
+      transform: translateX(-120%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.header__title {
+    transform: translateX(0);
+    animation-name: header_anim;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-transform: uppercase;
+    color: black
+    align-self: center;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+h1, h2, h3 {
+    margin: 1.5em;
+    font-family: Geneva, Verdana, sans-serif;
+}
+    
+h1 {
+    font-size: 32px;
+}
+
+h3 {
+  clear:both;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center
+}
+
+figcaption {
+    font-style: italic;
+}
+
+figure {
+    clear: right;
+    float: right;
+}
+
+@keyframes blue-red {
+    0% {
+      color: blue;
+    }
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+  }
+  .change-color {
+    animation: blue-red 3s infinite;
+  }
+
+  img {
+    clear: right;
+    float: right;
+}
+
+@keyframes red-violet {
+    0% {
+      color: red;
+    }
+    50% {
+      color: purple;
+    }
+  
+    100% {
+      color: red;
+    }
+  }
+  .color-change {
+    animation: red-violet 3s infinite;
+  }
+ 
